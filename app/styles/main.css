@@ -1,0 +1,51 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* NOTIFICATIONS */
+
+.info, .error {
+  padding: 10px;
+  text-align: center;
+}
+
+.error {
+  background-color: #FFBABA;
+  border: 1px solid #D8000C;
+  color: #D8000C;
+}
+
+.info {
+  background-color: #BDE5F8;
+  border: 1px solid #00529B;
+  color: #00529B;
+}
+
+/* CONTENT */
+
+.content {
+  padding: 20px;
+}
+
+.loading {
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  background: url(../images/loading.gif);
+}
+
+.title {
+  color: #444;
+  text-shadow: 1px 1px 0 #DDD;
+}
+
+.clients-list {
+  margin-top: 10px;
+}
+
+.link-email {
+  text-decoration: none;
+  color: #444;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "scup",
+  "version": "1.0.0",
+  "description": "Create a page that requests JSON data from a preconfigured URL, and renders a sorted list of names, with links to their e-mails, and a heading title as received.",
+  "authors": [
+    "Tiago de Assis Gonçalves <contato@tiagogoncalves.com.br>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14"
+  }
+}

@@ -1,0 +1,19 @@
+<p class="info"><input type="checkbox" ng-model="error" ng-change="ChangeError()" />Mark this do simulate an error.</p>
+
+<div class="content">
+  <div class="loading" ng-if="loading"></div>
+
+  <div class="ajax-result" ng-if="!loading">
+    <h1 class="title">{{data.title}}</h1>
+
+    <ul class="clients-list" ng-if="data.table.length > 0">
+      <li ng-repeat="row in data.table | orderBy:'name'">
+        <a ng-href="mailto:{{row.email}}" class="link-email">{{row.name}} ({{row.email}})</a>
+      </li>
+    </ul>
+
+    <div class="error" ng-if="!data && error_message">
+      {{error_message}} ({{error_number}})
+    </div>
+  </div>
+</div>

@@ -7,3 +7,23 @@ You can use the URLs below as references for the server response:
 You can use up to one JavaScript library, as long as it is used to address cross-browser issues.
 
 We expect a ZIP file with your resulting files.
+
+
+Install
+===============================
+
+  npm install
+  bower install
+
+Subir o servidor
+================
+
+  grunt
+
+Executar os testes
+==================
+
+  node_modules/protractor/bin/webdriver-manager update
+  node_modules/protractor/bin/webdriver-manager start
+  node bin/server.js
+  node_modules/protractor/bin/protractor test/config.js
