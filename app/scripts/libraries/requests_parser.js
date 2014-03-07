@@ -1,7 +1,19 @@
+/**
+* Módulo para fazer tratamentos nas requisições.
+*
+* @namespace main.libraries
+* @class RequestsParser
+*/
 angular.module('main').factory('RequestsParser', function() {
 
   var RequestsParser = {};
 
+  /**
+  * Aplica os callbacks em uma requisição e trata o retorno,
+  * para redirecionar para erro.
+  *
+  * @method ParseCallbacks
+  */
   RequestsParser.ParseCallbacks = function(request, callbacks) {
     if (typeof(callbacks) !== 'undefined') {
       if (typeof(callbacks.error) !== 'undefined') {

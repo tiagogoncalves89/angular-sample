@@ -25,7 +25,12 @@ Run the tests
 
     node_modules/protractor/bin/webdriver-manager update
     node_modules/protractor/bin/webdriver-manager start
-    node_modules/protractor/bin/protractor test/config.js
+    grunt test
+
+Generate docs
+=============
+
+    grunt doc
 
 
 See application
