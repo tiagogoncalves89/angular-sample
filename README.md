@@ -4,10 +4,6 @@ You can use the URLs below as references for the server response:
 - Success: http://www.scup.com/outros/jobs/frontend-test-success.json
 - Failure: http://www.scup.com/outros/jobs/frontend-test-failure.json
 
-You can use up to one JavaScript library, as long as it is used to address cross-browser issues.
-
-We expect a ZIP file with your resulting files.
-
 
 Install
 ===============================
