@@ -1,4 +1,4 @@
-<p class="info"><input type="checkbox" ng-model="error" ng-change="ChangeError()" />Mark this do simulate an error.</p>
+<label class="info"><input type="checkbox" ng-model="error" ng-change="ChangeError()" />Mark this do simulate an error.</label>
 
 <div class="content">
   <div class="loading" ng-if="loading"></div>
@@ -7,7 +7,7 @@
     <h1 class="title">{{data.title}}</h1>
 
     <ul class="clients-list" ng-if="data.table.length > 0">
-      <li ng-repeat="row in data.table | orderBy:'name'">
+      <li ng-repeat="row in data.table | orderBy:'name'" class="client-item">
         <a ng-href="mailto:{{row.email}}" class="link-email">{{row.name}} ({{row.email}})</a>
       </li>
     </ul>

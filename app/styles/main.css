@@ -7,6 +7,7 @@
 /* NOTIFICATIONS */
 
 .info, .error {
+  display: block;
   padding: 10px;
   text-align: center;
 }
@@ -21,6 +22,10 @@
   background-color: #BDE5F8;
   border: 1px solid #00529B;
   color: #00529B;
+}
+
+.info [type=checkbox] {
+  margin-right: 5px;
 }
 
 /* CONTENT */
@@ -43,6 +48,15 @@
 
 .clients-list {
   margin-top: 10px;
+}
+
+.client-item {
+  list-style: none;
+}
+
+.client-item:before {
+  content: '• ';
+  color: #666;
 }
 
 .link-email {

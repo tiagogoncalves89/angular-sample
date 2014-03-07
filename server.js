@@ -1,7 +1,3 @@
-var express = require('express');
-var winston = require('winston');
-var app = express();
-
 var GetClients = function(error) {
   var result;
 
@@ -29,6 +25,11 @@ var GetClients = function(error) {
   return result;
 };
 
+var express = require('express');
+var winston = require('winston');
+var app = express();
+var path = require('path');
+
 app.all('/*', function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'X-Requested-With');
@@ -37,7 +38,6 @@ app.all('/*', function(req, res, next) {
 
 app.get('/clients.json', function(req, res){
   winston.info('clients.json');
-
   res.send(GetClients());
 });
 
@@ -46,4 +46,8 @@ app.get('/clients_error.json', function(req, res){
   res.send(GetClients(true));
 });
 
-app.listen(8000);
+app.configure(function(){
+  app.use(express.static(path.join(__dirname, 'app')));
+});
+
+app.listen(9876);

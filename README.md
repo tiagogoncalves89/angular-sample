@@ -12,18 +12,23 @@ We expect a ZIP file with your resulting files.
 Install
 ===============================
 
-  npm install
-  bower install
+    npm install
+    bower install
 
-Subir o servidor
+Up the server
 ================
 
-  grunt
+    grunt
 
-Executar os testes
+Run the tests
 ==================
 
-  node_modules/protractor/bin/webdriver-manager update
-  node_modules/protractor/bin/webdriver-manager start
-  node bin/server.js
-  node_modules/protractor/bin/protractor test/config.js
+    node_modules/protractor/bin/webdriver-manager update
+    node_modules/protractor/bin/webdriver-manager start
+    node_modules/protractor/bin/protractor test/config.js
+
+
+See application
+===============
+
+    http://localhost:9876/

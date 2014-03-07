@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         options: {
           stdout: true
         },
-        command: 'node bin/server.js'
+        command: 'node server.js'
       }
     }
   });
